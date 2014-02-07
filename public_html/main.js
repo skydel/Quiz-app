@@ -3,14 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-var id='que';
-var count =0;
+var id = 'que';
+var count = 1;
 
-function onNext(){
-    previous= '#'+id+count;
-    count=count+1;
-    select= '#'+id+count;
-    $(select).show();
-    $(previous).hide();
+function onNext() {
+    if (count >= 1 && count < 23) {
+        previous = '#' + id + count;
+        count = count + 1;
+        select = '#' + id + count;
+        $(select).show();
+        $(previous).hide();
+    }
 }
 

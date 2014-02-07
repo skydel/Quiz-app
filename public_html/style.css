@@ -1,4 +1,9 @@
-
+html{
+    
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 .content {
     width: 960px;
     margin: 0 auto;
@@ -6,8 +11,13 @@
 
 .wrapper {
     margin: 0 auto;
+    padding: 20px 0;
 }
 
 .questions {
     display: none;
+}
+
+.questions label{
+    font-size: 1.2em;
 }
