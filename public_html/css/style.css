@@ -27,3 +27,17 @@ body{
 .questions label{
     font-size: 1.2em;
 }
+.controls {
+    margin-top: 20px;
+}
+
+.lblnumber {
+    display: block;
+   /* margin: 3px auto;*/
+    font-family: "Bree Serif", Georgia, Times New Roman, Times, serif;
+    font-weight: bold;
+    color: rgb(138, 80, 141);
+}
+label{
+    display: block;
+}
