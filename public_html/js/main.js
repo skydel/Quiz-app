@@ -7,12 +7,16 @@ var id = 'que';
 var count = 1;
 
 function onNext() {
-    if (count >= 1 && count < 23) {
+    if (count >= 1 && count < 20) {
         previous = '#' + id + count;
         count = count + 1;
         select = '#' + id + count;
         $(select).show();
         $(previous).hide();
+        $('#next').attr("disabled", true);
     }
+}
+function onChange(){
+    $('#next').removeAttr("disabled");
 }
 
