@@ -12,7 +12,7 @@ body{
 
 .wrapper {
     margin: 0 auto;
-    padding: 20px 10px;
+    padding: 20px 50px;
     background: white;
     border-radius: 3px;
     -moz-border-radius: 3px;
@@ -30,7 +30,10 @@ body{
 .controls {
     margin-top: 20px;
 }
-
+#submit{
+     margin-top: 20px;
+     display: none;
+}
 .lblnumber {
     display: block;
    /* margin: 3px auto;*/

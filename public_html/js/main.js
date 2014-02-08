@@ -15,6 +15,10 @@ function onNext() {
         $(previous).hide();
         $('#next').attr("disabled", true);
     }
+    else{
+        $('#next').hide();
+        $('#submit').show();
+    }
 }
 function onChange(){
     $('#next').removeAttr("disabled");
