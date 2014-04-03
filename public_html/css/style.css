@@ -45,3 +45,11 @@ body{
 label{
     display: block;
 }
+
+.French {
+    display: none;
+}
+
+.German {
+    display: none;
+}
