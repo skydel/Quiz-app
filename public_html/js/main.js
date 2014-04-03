@@ -56,7 +56,7 @@ function langSelector() {
 }
 
 function displayMessage() {
-    $("#scoreMessage").hide();
+    $("#scoreMessage").show();
     $(".controls").hide();
     $("#questForm").hide();
 
