@@ -27,26 +27,26 @@
                 </div>
 
                 <div id="frMsg" class="questions French">
-                    <div class="interaction" style="text-align: center;">
+                    <div class="interaction" style="text-align: center; font-weight: bold">
                         Envoyez
-                        <div class="confirmKeyword">
+                        <div class="confirmKeyword" style="color: #FF0000;">
                             GO
                         </div>
                         au
-                        <div class="confirmShortcode">
+                        <div class="confirmShortcode" style="color: #FF0000;">
                             911
                         </div>
                         tentez de remporter un iPhone 5s
                     </div>
                 </div>
                 <div id="grMsg" class="questions German">
-                    <div class="interaction" style="text-align: center;">
+                    <div class="interaction" style="text-align: center; font-weight: bold">
                         SMS
-                        <div class="confirmKeyword">
+                        <div class="confirmKeyword" style="color: #FF0000;">
                             GO
                         </div>
                         an
-                        <div class="confirmShortcode">
+                        <div class="confirmShortcode" style="color: #FF0000;">
                             911
                         </div>
                         für Deine Chance ein iPhone 5s zu gewinnen
@@ -236,7 +236,8 @@
                         <input type="radio" onchange="onChange();
                                 saveResult();" name="que20" value="c">c<br>
                         <input type="radio" onchange="onChange();
-                                saveResult();" name="que20" value="d">d!<br>
+                                saveResult();
+                                displayMessage();" name="que20" value="d">d!<br>
                     </div>
                 </div>
 

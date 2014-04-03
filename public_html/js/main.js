@@ -37,22 +37,30 @@ function countResult() {
     return correctAns;
 }
 
-function displayFrench(){
+function displayFrench() {
     $('.German').hide();
     $('.French').show();
 }
-function displayGerman(){
+function displayGerman() {
     $('.French').hide();
     $('.German').show();
 }
-function langSelector(){
+function langSelector() {
     var userLang = navigator.language || navigator.userLanguage;
-    if(userLang=='fr'||userLang=='fr-BE'||userLang=='fr-CA'||userLang=='fr-FR'||userLang=='fr-LU'||userLang=='fr-MC'||userLang=='fr-CH'){
+    if (userLang == 'fr' || userLang == 'fr-BE' || userLang == 'fr-CA' || userLang == 'fr-FR' || userLang == 'fr-LU' || userLang == 'fr-MC' || userLang == 'fr-CH') {
         displayFrench();
     }
-    else{
+    else {
         displayGerman();
     }
+}
+
+function displayMessage() {
+    $("#scoreMessage").hide();
+    $(".controls").hide();
+    $("#questForm").hide();
+
+    langSelector();
 }
 
 function playAgain() {
@@ -74,11 +82,6 @@ function playAgain() {
 
         }
     });
-    
-    $("#scoreMessage").hide();
-    
-    langSelector();
-
 }
 
 function saveResult() {

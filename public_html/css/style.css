@@ -11,7 +11,7 @@ body{
 }
 
 .wrapper {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     padding: 20px 50px;
     background: white;
@@ -52,4 +52,31 @@ label{
 
 .German {
     display: none;
+}
+
+@media screen and (max-width:360px){
+    .content{
+        width: 90%;
+    }
+    .wrapper{
+       padding: 1px;
+    }
+}
+@media screen and (min-width:361px) and (max-width:480px){
+    .content{
+        width: 90%;
+    }
+    .wrapper{
+       padding: 10px 20px;
+    }
+}
+@media screen and (min-width:481px) and (max-width:768px){
+    .content{
+        width: 90%;
+    }
+}
+@media screen and (min-width:769px) and (max-width:1280px){
+    .content{
+        width: 90%;
+    }
 }
