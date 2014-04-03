@@ -118,6 +118,13 @@ label{
 #shortcodeMsg{
     font-size: 1.6em;
 }
+.disclaimer {
+   display: none;
+   font-size: .7em;
+}
+
+
+
 @media screen and (max-width:360px){
     .content{
         width: 90%;
@@ -158,5 +165,3 @@ label{
         width: 90%;
     }
 }
-
-

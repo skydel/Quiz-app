@@ -5,10 +5,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="../cam/CH/quiz/css/style.css" type="text/css">
-        <!--
+        
         <link rel="stylesheet" href="css/style.css" type="text/css"/>
         <script type="text/javascript" src="js/main.js"></script>
-        -->
+        
         <script type="text/javascript" src="../cam/CH/quiz/js/main.js"></script>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     </head>
@@ -255,6 +255,18 @@
             </div>
 
             <div class="footer">
+                <div class="disclaimer">
+                     Les frais de participation sont de 30 CHF par tour!
+Ce quizz commence le 1er Decembre 2013 00:00 heure et se termine le 28 Fevrier 2014 23:59 heure.
+
+Vous pouvez participer quizz SMSQuest en soumettant votre numéro de téléphone portable dans le champ prévu sur notre page. Vous recevrez d'abord un message du numéro court 345 à laquelle vous devez répondre par OK pour confirmer votre participation. Les frais de participation sont de 30 CHF (TTC) par tour (+ coût des SMS/données sur votre téléphone). Chaque fois que vous confirmé votre participation à un nouveau tour, vous recevrez un SMS avec un code personnel qui vous donnera au prochain tour de questions auxquelles on doit répondre en ligne dans un laps de temps limité. Vous pouvez participer jusqu'à un maximum de 12 tours (ou jusqu'à ce que vous ayez répondu à toutes les questions dans un tour de qualification correctement).
+
+SMSQuest n'est pas un service d'abonnement mais un quizz basée sur la connaissance pour lequel vous devez répondre a des questions. Le participant avec le plus grand nombre de bonnes réponses fournies dans un tour sera le gagnant. Dans le cas où, à la fin de la période de quizz plusieurs participants ont généré le même résultat, ceux-ci seront invités à participer par SMS (sans frais supplémentaires) a une finale pour déterminer le vainqueur. Un seul prix sera décerné. Les mineurs ne sont pas autorisés à participer à moins d'avoir l'autorisation de leurs parents ou du titulaire du compte. Les frais seront facturés sur votre compte mobile ou déduits de votre solde.
+
+Fournisseur: SMSQuest, P.O. Box 8196, 3503RD, Utrecht, Pays-Bas. Pour plus de renseignements, appelez le 044 581 69 84 ou contactez-nous par email smsquest@smsquest.com. S'il vous plaît lire attentivement les conditions générales et les Modalités du Concours qui s'appliquent.
+
+Conditions générales  |   Charte de confidentialité  |   Contact
+                </div>
                 <div class="copyright">
                     <center>
                         Copyright &COPY; information
@@ -284,6 +296,7 @@
             }
 
             $("#shortcodeMsg").hide();
+             $(".disclaimer").hide();
             $(".controls").hide();
 
             $(document).ready(function() {

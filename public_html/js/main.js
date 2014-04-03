@@ -75,6 +75,7 @@ function playAgain() {
             $("#queMessage").hide();
             $("#scoreMessage").hide();
             $("#shortcodeMsg").show();
+            $(".disclaimer").show();
         },
         error: function(request, status, error) {
 
