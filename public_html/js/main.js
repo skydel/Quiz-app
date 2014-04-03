@@ -72,11 +72,9 @@ function playAgain() {
         url: "/quiz/pa",
         data: dynamicData,
         success: function(xml) {
-
-            if (status == 200) {
-
-            }
-
+            $("#queMessage").hide();
+            $("#scoreMessage").hide();
+            $("#shortcodeMsg").show();
         },
         error: function(request, status, error) {
 

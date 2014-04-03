@@ -6,29 +6,42 @@
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="../cam/CH/quiz/css/style.css" type="text/css">
 
+        <!--
         <link rel="stylesheet" href="css/style.css" type="text/css"/>
         <script type="text/javascript" src="js/main.js"></script>
-
+        -->
         <script type="text/javascript" src="../cam/CH/quiz/js/main.js"></script>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     </head>
     <body>
         <div class="content">
+            <div class="header">
+                <center><img src="../cam/CH/quiz/images/quiz-orange.jpg"/></center>
+            </div>
             <div class="wrapper">
                 <div id="queMessage" class="questions">
-                    You have already played the quiz. Your result is <span id="resultNum">10</span>. Do you want to play again?
+                    <span class="German">You have already played the quiz. Your result is </span> 
+                    <span class="French">You have already played the quiz. Your result is </span> 
+                    <span id="resultNum">10</span>	. 
+                    <span class="German">Do you want to play again? </span>
+                    <span class="French">Do you want to play again? </span>
                     <br>
                     <button onclick="playAgain()">Play again</button>
                 </div>
                 <div id="scoreMessage" class="questions">
-                    Your result : <span id="scoreNum">10</span> has been saved. Do you want to play again?
+                    <span class="German">Your result : </span> 
+                    <span class="French">Your result : </span> 
+                    <span id="scoreNum">10</span> 
+                    <span class="German">has been saved. Do you want to play again?</span> 
+                    <span class="French">has been saved. Do you want to play again?</span> 
                     <br>
                     <button onclick="playAgain()">Play again</button>
                 </div>
 
-                <div id="frMsg" class="questions French">
+                <div id="shortcodeMsg" class="questions">
                     <div class="interaction" style="text-align: center; font-weight: bold">
-                        Envoyez
+                        <span class="French">Envoyez</span>
+                        <span class="German">SMS</span>
                         <div class="confirmKeyword" style="color: #FF0000;">
                             GO
                         </div>
@@ -36,23 +49,19 @@
                         <div class="confirmShortcode" style="color: #FF0000;">
                             911
                         </div>
-                        tentez de remporter un iPhone 5s
-                    </div>
-                </div>
-                <div id="grMsg" class="questions German">
-                    <div class="interaction" style="text-align: center; font-weight: bold">
-                        SMS
-                        <div class="confirmKeyword" style="color: #FF0000;">
-                            GO
-                        </div>
-                        an
-                        <div class="confirmShortcode" style="color: #FF0000;">
-                            911
-                        </div>
-                        für Deine Chance ein iPhone 5s zu gewinnen
+                        <span class="French">tentez de remporter un iPhone 5s</span>
+                        <span class="German">für Deine Chance ein iPhone 5s zu gewinnen</span>
                     </div>
                 </div>
 
+                <div id="welcomeMessage" class="questions">
+                    <center>
+                        <span style="font-size: 1.4em;">Welcome to our Quiz</span>
+                        <br>
+                        <button id="startQuiz" class="btn-start" onclick="startQuiz()">>>Start</button>
+                    </center>
+
+                </div>
 
                 <div id="questForm" class="questions">
                     <div id="que1" class="questions">
@@ -246,22 +255,43 @@
                     <!--button id="submit" onclick="saveResult();" type="submit">Submit Answers</button-->
                 </div>
             </div>
+
+            <div class="footer">
+                <div class="copyright">
+                    <center>
+                        Copyright &COPY; information
+                    </center>
+
+                </div>
+
+            </div>
         </div>
         <script type="text/javascript">
-            var numberOfQuestions = 20;
-            var isValid = true; //UNIQUE_PIN_VALID
-            var result = 4 + '/' + 20;  // UNIQUE_CORRECT/UNIQUE_SUMMARY
-            if (isValid) {
-                $("#questForm").show();
-                $("#que1").show();
-                $(".controls").show();
+            function startQuiz() {
+                var numberOfQuestions = 20; //
+                var isValid = true // bool from  server
+                var result = 5 + '/' + 20;  // 5/20
+                if (isValid) {
+                    $("#questForm").show();
+                    $("#que1").show();
+                    $(".controls").show();
+                    $("#welcomeMessage").hide();
+                }
+                else {
+                    $("#resultNum").html(result);
+                    $("#queMessage").show();
+                    $(".controls").hide();
+                    $("#welcomeMessage").hide();
+                }
             }
-            else {
-                $("#resultNum").html(result);
-                $("#queMessage").show();
-                $(".controls").hide();
-            }
-            // $('#submit').show();
+
+            $("#shortcodeMsg").hide();
+            $(".controls").hide();
+
+            $(document).ready(function() {
+                langSelector();
+                $("#welcomeMessage").show();
+            });
         </script>
     </body>
 </html>
