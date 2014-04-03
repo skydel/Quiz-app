@@ -115,7 +115,9 @@ label{
 .German {
     display: none;
 }
-
+#shortcodeMsg{
+    font-size: 1.6em;
+}
 @media screen and (max-width:360px){
     .content{
         width: 90%;
