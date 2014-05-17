@@ -115,15 +115,10 @@ label{
 .German {
     display: none;
 }
+
 #shortcodeMsg{
     font-size: 1.6em;
 }
-.disclaimer {
-   display: none;
-   font-size: .7em;
-}
-
-
 
 @media screen and (max-width:360px){
     .content{
@@ -165,3 +160,5 @@ label{
         width: 90%;
     }
 }
+
+

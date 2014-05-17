@@ -1,5 +1,6 @@
 var id = 'que';
 var count = 1;
+var lang;
 
 function getURLParameter(name) {
     return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [, ""])[1].replace(/\+/g, '%20')) || null;
@@ -40,10 +41,14 @@ function countResult() {
 function displayFrench() {
     $('.German').hide();
     $('.French').show();
+	
+	lang = 'fr';
 }
 function displayGerman() {
     $('.French').hide();
     $('.German').show();
+	
+	lang = 'de';
 }
 function langSelector() {
     var userLang = navigator.language || navigator.userLanguage;
@@ -75,7 +80,12 @@ function playAgain() {
             $("#queMessage").hide();
             $("#scoreMessage").hide();
             $("#shortcodeMsg").show();
-            $(".disclaimer").show();
+			if(lang == 'de'){
+				$("#disclaimerGerman").show();
+				
+			}else{
+				$("#disclaimerFrench").show();
+			}
         },
         error: function(request, status, error) {
 
@@ -87,7 +97,7 @@ function saveResult() {
 
     var dynamicData = 'p=' + getURLParameter("p") + '&s=' + numberOfQuestions + '&c=' + countResult();
 
-    var score = countResult() + '/' + numberOfQuestions;
+    var score = countResult();
 
     $.ajax({
         dataType: "text",
