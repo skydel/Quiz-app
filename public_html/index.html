@@ -15,32 +15,32 @@
             </div>
             <div class="wrapper">
                 <div id="queMessage" class="questions">
-				<!--You have already played the quiz. You answered correct UNIQUE_CORRECT out of UNIQUE_SUMMARY questions.-->
+                    <!--You have already played the quiz. You answered correct UNIQUE_CORRECT out of UNIQUE_SUMMARY questions.-->
                     <span class="German">Sie haben bereits das Quiz gespielt. Sie antwortete korrekt UNIQUE_CORRECT von UNIQUE_SUMMARY Fragen.</span> 
                     <span class="French">Vous avez déjà joué au jeu-questionnaire. Vous avez répondu correctement UNIQUE_CORRECT aux questions UNIQUE_SUMMARY.</span> 
                     <!--span id="resultNum">10</span-->
-					<!--<span class="German">Do you want to play again? </span>-->
+                    <!--<span class="German">Do you want to play again? </span>-->
                     <span class="German">Wollen Sie wieder spielen?</span>
                     <span class="French">Voulez-vous jouer à nouveau?</span>
                     <br>
                     <button class="btn-start" onclick="playAgain()">
-					<span class="German">Wieder spielen</span>
-					<span class="French">Jouer à nouveau</span>
-					</button>
+                        <span class="German">Wieder spielen</span>
+                        <span class="French">Jouer à nouveau</span>
+                    </button>
                 </div>
                 <div id="scoreMessage" class="questions">
-				<!-- <span class="German">You answered correct UNIQUE_CORRECT out of UNIQUE_SUMMARY questions.</span> -->
+                    <!-- <span class="German">You answered correct UNIQUE_CORRECT out of UNIQUE_SUMMARY questions.</span> -->
                     <span class="German">Sie antwortete korrekt <span id="scoreNum">10</span> von 10 Fragen.</span> 
                     <span class="French">Vous avez répondu correctement <span id="scoreNum">10</span> aux questions 10.</span> 
                     <!--span id="scoreNum">10</span--> 
-					<!-- Your result has been saved. Do you want to play again to increase amount of correct answers? -->
+                    <!-- Your result has been saved. Do you want to play again to increase amount of correct answers? -->
                     <span class="German">Ihr Ergebnis wurde gespeichert. Möchten Sie noch einmal spielen, um Ihre Punktzahl zu erhöhen?</span> 
                     <span class="French">Votre score a été enregistré. Voulez-vous jouer à nouveau pour augmenter votre score?</span> 
                     <br>
                     <button class="btn-start" onclick="playAgain()">
-					<span class="German">Wieder spielen</span>
-					<span class="French">Jouer à nouveau</span>
-					</button>
+                        <span class="German">Wieder spielen</span>
+                        <span class="French">Jouer à nouveau</span>
+                    </button>
                 </div>
 
                 <div id="shortcodeMsg" class="questions">
@@ -62,14 +62,14 @@
                 <div id="welcomeMessage" class="questions">
                     <center>
                         <span style="font-size: 1.4em;">
-							<span class="French">Bienvenue à notre Quiz</span>
-							<span class="German">Willkommen zu unserem Quiz</span>
-						</span>
+                            <span class="French">Bienvenue à notre Quiz</span>
+                            <span class="German">Willkommen zu unserem Quiz</span>
+                        </span>
                         <br>
                         <button id="startQuiz" class="btn-start" onclick="startQuiz()">
-							<span class="French">>>Start</span>
-							<span class="German">>>Start</span>
-						</button>
+                            <span class="French">>>Start</span>
+                            <span class="German">>>Start</span>
+                        </button>
                     </center>
 
                 </div>
@@ -77,145 +77,145 @@
                 <div id="questForm" class="questions">
                     <div id="que1" class="questions">
                         <label class="lblnumber">
-							<span class="French">Question</span>
-							<span class="German">Frage</span>
-							1
-						</label><br>
+                            <span class="French">Question</span>
+                            <span class="German">Frage</span>
+                            1
+                        </label><br>
                         <label>
-						<!-- What is the next correct number -->
-							<span class="French">Quel est le prochain nombre correct</span>
-							<span class="German">Was ist der nächste richtige Anzahl</span>
-							0, 1, 3, 6, 10, ?
-						</label><br>
+                            <!-- What is the next correct number -->
+                            <span class="French">Quel est le prochain nombre correct</span>
+                            <span class="German">Was ist der nächste richtige Anzahl</span>
+                            0, 1, 3, 6, 10, ?
+                        </label><br>
                         <input type="radio" onchange="onChange()" name="que1" value="6">6<br>
                         <input type="radio" onchange="onChange()" name="que1" value="12">12<br>
-                        <input type="radio" onchange="onChange()" name="que1" value="15">15<br>
+                        <input type="radio" onchange="correctAns()" name="que1" value="15">15<br>
                         <input type="radio" onchange="onChange()" name="que1" value="16">16<br>
                     </div>
                     <div id="que2" class="questions">
                         <label class="lblnumber">
-							<span class="French">Question</span>
-							<span class="German">Frage</span>
-							2
-						</label><br>
+                            <span class="French">Question</span>
+                            <span class="German">Frage</span>
+                            2
+                        </label><br>
                         <label>
-							<span class="French">Quel est le prochain nombre correct</span>
-							<span class="German">Was ist der nächste richtige Anzahl</span>
-							1, 1, 2, 3, 5, ?
-						</label><br>
-                        <input type="radio" onchange="onChange()" name="que2" value="8">8<br>
+                            <span class="French">Quel est le prochain nombre correct</span>
+                            <span class="German">Was ist der nächste richtige Anzahl</span>
+                            1, 1, 2, 3, 5, ?
+                        </label><br>
+                        <input type="radio" onchange="correctAns()" name="que2" value="8">8<br>
                         <input type="radio" onchange="onChange()" name="que2" value="10">10<br>
                         <input type="radio" onchange="onChange()" name="que2" value="7">7<br>
                         <input type="radio" onchange="onChange()" name="que2" value="3">3<br>
                     </div>
                     <div id="que3" class="questions">
                         <label class="lblnumber">
-							<span class="French">Question</span>
-							<span class="German">Frage</span>
-							3
-						</label><br>
+                            <span class="French">Question</span>
+                            <span class="German">Frage</span>
+                            3
+                        </label><br>
                         <label>
-							<span class="French">Quel est le prochain nombre correct</span>
-							<span class="German">Was ist der nächste richtige Anzahl</span>
-							21, 20, 18, 15, 11, ?
-						</label><br>
+                            <span class="French">Quel est le prochain nombre correct</span>
+                            <span class="German">Was ist der nächste richtige Anzahl</span>
+                            21, 20, 18, 15, 11, ?
+                        </label><br>
                         <input type="radio" onchange="onChange()" name="que3" value="26">26<br>
                         <input type="radio" onchange="onChange()" name="que3" value="17">17<br>
                         <input type="radio" onchange="onChange()" name="que3" value="18">18<br>
-                        <input type="radio" onchange="onChange()" name="que3" value="6">6<br>
+                        <input type="radio" onchange="correctAns()" name="que3" value="6">6<br>
                     </div>
                     <div id="que4" class="questions">
                         <label class="lblnumber">
-							<span class="French">Question</span>
-							<span class="German">Frage</span>
-							4
-						</label><br>
+                            <span class="French">Question</span>
+                            <span class="German">Frage</span>
+                            4
+                        </label><br>
                         <label>
-							<span class="French">Quel est le prochain nombre correct</span>
-							<span class="German">Was ist der nächste richtige Anzahl</span>
-							8, 6, 7, 5, 6, 4, ?
-						</label><br>
+                            <span class="French">Quel est le prochain nombre correct</span>
+                            <span class="German">Was ist der nächste richtige Anzahl</span>
+                            8, 6, 7, 5, 6, 4, ?
+                        </label><br>
                         <input type="radio" onchange="onChange()" name="que4" value="7">7<br>
                         <input type="radio" onchange="onChange()" name="que4" value="3">3<br>
                         <input type="radio" onchange="onChange()" name="que4" value="9">9<br>
-                        <input type="radio" onchange="onChange()" name="que4" value="5">5<br>
+                        <input type="radio" onchange="correctAns()" name="que4" value="5">5<br>
                     </div>
                     <div id="que5" class="questions">
                         <label class="lblnumber">
-							<span class="French">Question</span>
-							<span class="German">Frage</span>
-							5
-						</label><br>
+                            <span class="French">Question</span>
+                            <span class="German">Frage</span>
+                            5
+                        </label><br>
                         <label>
-							<span class="French">Quel est le prochain nombre correct</span>
-							<span class="German">Was ist der nächste richtige Anzahl</span>						
-						65536, 256, 16, ?</label><br>
+                            <span class="French">Quel est le prochain nombre correct</span>
+                            <span class="German">Was ist der nächste richtige Anzahl</span>						
+                            65536, 256, 16, ?</label><br>
                         <input type="radio" onchange="onChange()" name="que5" value="13">13<br>
-                        <input type="radio" onchange="onChange()" name="que5" value="4">4<br>
+                        <input type="radio" onchange="correctAns()" name="que5" value="4">4<br>
                         <input type="radio" onchange="onChange()" name="que5" value="8">8<br>
                         <input type="radio" onchange="onChange()" name="que5" value="2">2<br>
                     </div>
                     <div id="que6" class="questions">
                         <label class="lblnumber">
-							<span class="French">Question</span>
-							<span class="German">Frage</span>
-							6
-						</label><br>
+                            <span class="French">Question</span>
+                            <span class="German">Frage</span>
+                            6
+                        </label><br>
                         <label>
-							<span class="French">Quel est le prochain nombre correct</span>
-							<span class="German">Was ist der nächste richtige Anzahl</span>					
-						55, 30, 14, 5, ?</label><br>
-                        <input type="radio" onchange="onChange()" name="que6" value="1">1<br>
+                            <span class="French">Quel est le prochain nombre correct</span>
+                            <span class="German">Was ist der nächste richtige Anzahl</span>					
+                            55, 30, 14, 5, ?</label><br>
+                        <input type="radio" onchange="correctAns()" name="que6" value="1">1<br>
                         <input type="radio" onchange="onChange()" name="que6" value="3">3<br>
                         <input type="radio" onchange="onChange()" name="que6" value="2">2<br>
                         <input type="radio" onchange="onChange()" name="que6" value="-4">-4<br>
                     </div>
                     <div id="que7" class="questions">
                         <label class="lblnumber">
-							<span class="French">Question</span>
-							<span class="German">Frage</span>
-							7
-						</label><br>
+                            <span class="French">Question</span>
+                            <span class="German">Frage</span>
+                            7
+                        </label><br>
                         <label>
-							<span class="French">Quel est le prochain nombre correct</span>
-							<span class="German">Was ist der nächste richtige Anzahl</span>							
-						3968, 63, 8, 3, ?</label><br>
+                            <span class="French">Quel est le prochain nombre correct</span>
+                            <span class="German">Was ist der nächste richtige Anzahl</span>							
+                            3968, 63, 8, 3, ?</label><br>
                         <input type="radio" onchange="onChange()" name="que7" value="1">1<br>
                         <input type="radio" onchange="onChange()" name="que7" value="8">8<br>
-                        <input type="radio" onchange="onChange()" name="que7" value="2">2<br>
+                        <input type="radio" onchange="correctAns()" name="que7" value="2">2<br>
                         <input type="radio" onchange="onChange()" name="que7" value="4">4<br>
                     </div>
                     <div id="que8" class="questions">
                         <label class="lblnumber">
-							<span class="French">Question</span>
-							<span class="German">Frage</span>
-							8
-						</label><br>
+                            <span class="French">Question</span>
+                            <span class="German">Frage</span>
+                            8
+                        </label><br>
                         <label>
-							<!-- Pick the piece that's missing from the diagram below.-->
-							<span class="French">Choisissez la pièce manquante dans le diagramme ci-dessous.</span>
-							<span class="German">Wählen Sie das Stück, das aus der Abbildung unten fehlt.</span>
-						</label><br>
+                            <!-- Pick the piece that's missing from the diagram below.-->
+                            <span class="French">Choisissez la pièce manquante dans le diagramme ci-dessous.</span>
+                            <span class="German">Wählen Sie das Stück, das aus der Abbildung unten fehlt.</span>
+                        </label><br>
                         <img src="images/ques1.png" /><br>
-                        <input type="radio" onchange="onChange()" name="que8" value="opt1"><img src="images/ques1opt1.png" /><br>
+                        <input type="radio" onchange="correctAns()" name="que8" value="opt1"><img src="images/ques1opt1.png" /><br>
                         <input type="radio" onchange="onChange()" name="que8" value="opt2"><img src="images/ques1opt2.png" /><br>
                         <input type="radio" onchange="onChange()" name="que8" value="opt3"><img src="images/ques1opt3.png" /><br>
                         <input type="radio" onchange="onChange()" name="que8" value="opt4"><img src="images/ques1opt4.png" /><br>
                     </div>
                     <div id="que9" class="questions">
                         <label class="lblnumber">
-							<span class="French">Question</span>
-							<span class="German">Frage</span>
-							9
-						</label><br>
+                            <span class="French">Question</span>
+                            <span class="German">Frage</span>
+                            9
+                        </label><br>
                         <label>
-						<!-- Which answer should go in the bottom right?-->
-							<span class="French">Quelle réponse devrait aller en bas à droite?</span>
-							<span class="German">Welche Antwort in der rechten unteren Ecke gehen sollte?</span>
-						</label><br>
+                            <!-- Which answer should go in the bottom right?-->
+                            <span class="French">Quelle réponse devrait aller en bas à droite?</span>
+                            <span class="German">Welche Antwort in der rechten unteren Ecke gehen sollte?</span>
+                        </label><br>
                         <img src="images/ques2.png" /><br>
                         <input type="radio" onchange="onChange()" name="que9" value="a">a<br>
-                        <input type="radio" onchange="onChange()" name="que9" value="b">b<br>
+                        <input type="radio" onchange="correctAns()" name="que9" value="b">b<br>
                         <input type="radio" onchange="onChange()" name="que9" value="c">c<br>
                         <input type="radio" onchange="onChange()" name="que9" value="d">d<br>
                         <input type="radio" onchange="onChange()" name="que9" value="e">e<br>
@@ -223,76 +223,206 @@
                     </div>
                     <div id="que10" class="questions">
                         <label class="lblnumber">
-							<span class="French">Question</span>
-							<span class="German">Frage</span>
-							10
-						</label><br>
+                            <span class="French">Question</span>
+                            <span class="German">Frage</span>
+                            10
+                        </label><br>
                         <label>
-						<!--Complete the sequence -->
-							<span class="French">Complétez la séquence</span>
-							<span class="German">Füllen Sie die Reihenfolge</span>	
-						</label><br>
+                            <!--Complete the sequence -->
+                            <span class="French">Complétez la séquence</span>
+                            <span class="German">Füllen Sie die Reihenfolge</span>	
+                        </label><br>
                         <img src="images/ques3.png" /><br>
                         <input type="radio" onchange="onChange();
                                 saveResult();" name="que10" value="a">a<br>
-                        <input type="radio" onchange="onChange();
-                                saveResult();" name="que10" value="b">b<br>
+                        <input type="radio" onchange="correctAns();" name="que10" value="b">b<br>
                         <input type="radio" onchange="onChange();
                                 saveResult();" name="que10" value="c">c<br>
                         <input type="radio" onchange="onChange();
                                 saveResult();" name="que10" value="d">d<br>
                     </div>
                     
+                    
+                    <!-- NEW QUESTIONS FROM HERE -->
+                    <div id="que11" class="questions">
+                        <label class="lblnumber">
+                            <span class="French">Question</span>
+                            <span class="German">Frage</span>
+                            11
+                        </label><br>
+                        <label>
+                            <span class="French">Look at this series: 21, 9, 21, 11, 21, 13, 21, ... What number should come next?</span>
+                            <span class="German">Look at this series: 21, 9, 21, 11, 21, 13, 21, ... What number should come next?</span>
+                        </label><br>
+                        <input type="radio" onchange="onChange();" name="que10" value="a">14<br>
+                        <input type="radio" onchange="correctAns();" name="que10" value="b">15<br>
+                        <input type="radio" onchange="onChange();" name="que10" value="c">21<br>
+                        <input type="radio" onchange="onChange();" name="que10" value="d">23<br>
+                    </div>
+                    
+                    <div id="que12" class="questions">
+                        <label class="lblnumber">
+                            <span class="French">Question</span>
+                            <span class="German">Frage</span>
+                            12
+                        </label><br>
+                        <label>
+                            <span class="French">Look at this series: 58, 52, 46, 40, 34, ... What number should come next?</span>
+                            <span class="German">Look at this series: 58, 52, 46, 40, 34, ... What number should come next?</span>
+                        </label><br>
+                        <input type="radio" onchange="onChange();" name="que10" value="a">26<br>
+                        <input type="radio" onchange="correctAns();" name="que10" value="b">28<br>
+                        <input type="radio" onchange="onChange();" name="que10" value="c">30<br>
+                        <input type="radio" onchange="onChange();" name="que10" value="d">32<br>
+                    </div>
+                    
+                    <div id="que13" class="questions">
+                        <label class="lblnumber">
+                            <span class="French">Question</span>
+                            <span class="German">Frage</span>
+                            13
+                        </label><br>
+                        <label>
+                            <span class="French">Look at this series: 58, 52, 46, 40, 34, ... What number should come next?</span>
+                            <span class="German">Look at this series: 58, 52, 46, 40, 34, ... What number should come next?</span>
+                        </label><br>
+                        <input type="radio" onchange="onChange();" name="que10" value="a">26<br>
+                        <input type="radio" onchange="correctAns();" name="que10" value="b">28<br>
+                        <input type="radio" onchange="onChange();" name="que10" value="c">30<br>
+                        <input type="radio" onchange="onChange();" name="que10" value="d">32<br>
+                    </div>
+                    
+                    <div id="que14" class="questions">
+                        <label class="lblnumber">
+                            <span class="French">Question</span>
+                            <span class="German">Frage</span>
+                            14
+                        </label><br>
+                        <label>
+                            <span class="French">Look at this series: 8, 22, 8, 28, 8, ... What number should come next?</span>
+                            <span class="German">Look at this series: 8, 22, 8, 28, 8, ... What number should come next?</span>
+                        </label><br>
+                        <input type="radio" onchange="onChange();" name="que10" value="a">9<br>
+                        <input type="radio" onchange="onChange();" name="que10" value="b">29<br>
+                        <input type="radio" onchange="onChange();" name="que10" value="c">32<br>
+                        <input type="radio" onchange="correctAns();" name="que10" value="d">24<br>
+                    </div>
+                    <div id="que15" class="questions">
+                        <label class="lblnumber">
+                            <span class="French">Question</span>
+                            <span class="German">Frage</span>
+                            15
+                        </label><br>
+                        <label>
+                            <span class="French">Look at this series: 31, 29, 24, 22, 17, ... What number should come next?</span>
+                            <span class="German">Look at this series: 31, 29, 24, 22, 17, ... What number should come next?</span>
+                        </label><br>
+                        <input type="radio" onchange="correctAns();" name="que10" value="a">15<br>
+                        <input type="radio" onchange="onChange();" name="que10" value="b">14<br>
+                        <input type="radio" onchange="onChange();" name="que10" value="c">13<br>
+                        <input type="radio" onchange="onChange();" name="que10" value="d">12<br>
+                    </div>
+                    
+                    <div id="que16" class="questions">
+                        <label class="lblnumber">
+                            <span class="French">Question</span>
+                            <span class="German">Frage</span>
+                            16
+                        </label><br>
+                        <label>
+                            <span class="French">Look at this series: 1.5, 2.3, 3.1, 3.9, ... What number should come next?</span>
+                            <span class="German">Look at this series: 1.5, 2.3, 3.1, 3.9, ... What number should come next?</span>
+                        </label><br>
+                        <input type="radio" onchange="onChange();" name="que10" value="a">4.2<br>
+                        <input type="radio" onchange="onChange();" name="que10" value="b">4.4<br>
+                        <input type="radio" onchange="correctAns();" name="que10" value="c">4.7<br>
+                        <input type="radio" onchange="onChange();" name="que10" value="d">5.1<br>
+                    </div>
+                    
+                    <div id="que17" class="questions">
+                        <label class="lblnumber">
+                            <span class="French">Question</span>
+                            <span class="German">Frage</span>
+                            17
+                        </label><br>
+                        <label>
+                            <span class="French">Look at this series: 14, 28, 20, 40, 32, 64, ... What number should come next?</span>
+                            <span class="German">Look at this series: 14, 28, 20, 40, 32, 64, ... What number should come next?</span>
+                        </label><br>
+                        <input type="radio" onchange="onChange();" name="que10" value="a">52<br>
+                        <input type="radio" onchange="correctAns();" name="que10" value="b">56<br>
+                        <input type="radio" onchange="onChange();" name="que10" value="c">96<br>
+                        <input type="radio" onchange="onChange();" name="que10" value="d">128<br>
+                    </div>
+                    
+                    <div id="que18" class="questions">
+                        <label class="lblnumber">
+                            <span class="French">Question</span>
+                            <span class="German">Frage</span>
+                            18
+                        </label><br>
+                        <label>
+                            <span class="French">Look at this series: 2, 4, 6, 8, 10, ... What number should come next?</span>
+                            <span class="German">Look at this series: 2, 4, 6, 8, 10, ... What number should come next?</span>
+                        </label><br>
+                        <input type="radio" onchange="onChange();" name="que10" value="a">11<br>
+                        <input type="radio" onchange="correctAns();" name="que10" value="b">12<br>
+                        <input type="radio" onchange="onChange();" name="que10" value="c">13<br>
+                        <input type="radio" onchange="onChange();" name="que10" value="d">14<br>
+                    </div>
+                    
+                    <!-- NEW QUESTIONS END -->
+
                 </div>
 
                 <div class="controls">
                     <button id="next" onclick="onNext()" disabled="true">
-					<!-- Next Question-->
-						<span class="French">Prochaine question</span>
-						<span class="German">Nächste Frage</span>
-					</button>
+                        <!-- Next Question-->
+                        <span class="French">Prochaine question</span>
+                        <span class="German">Nächste Frage</span>
+                    </button>
                     <!--button id="submit" onclick="saveResult();" type="submit">Submit Answers</button-->
                 </div>
             </div>
 
             <div class="footer">
-			    <div id="disclaimerFrench" class="disclaimer">
-                <p style="text-align: center;">
+                <div id="disclaimerFrench" class="disclaimer">
+                    <p style="text-align: center;">
 
-                    <span style="font-weight: bold;">Les frais de participation sont de 30 CHF  par tour!</span>
-                    <br>
-                    Ce quizz commence le 1er avril 2014 00:00 heure et se termine le 31 octobre 2014 23:59 heure.
-                    <br>
-                    <br>
-                    Vous pouvez participer quizz  en soumettant votre numéro de téléphone portable dans le champ prévu sur notre page. Vous recevrez d'abord un message du numéro court 911 à laquelle vous devez répondre par GO pour confirmer votre participation. Les frais de participation sont de 30 CHF (TTC) par tour (+ coût des SMS/données sur votre téléphone)pour les clients Swisscom, Sunrise et Orange. Chaque fois que vous confirmé votre participation à un nouveau tour, vous recevrez un SMS avec un code personnel qui vous donnera au prochain tour de questions auxquelles on doit répondre en ligne dans un laps de temps limité. Vous pouvez participer jusqu'à un maximum de 12 tours (ou jusqu'à ce que vous ayez répondu à toutes les questions dans un tour de qualification correctement).
-                    <br>
-                    <br>
-                    Gamobila n'est pas un service d'abonnement mais un quizz basée sur la connaissance pour lequel vous devez répondre a des questions. Le participant avec le plus grand nombre de bonnes réponses fournies dans un tour sera le gagnant. Dans le cas où, à la fin de la période de quizz plusieurs participants ont généré le même résultat, ceux-ci seront invités à participer par SMS (sans frais supplémentaires) a une finale pour déterminer le vainqueur. Un seul prix sera décerné. Les mineurs ne sont pas autorisés à participer à moins d'avoir l'autorisation de leurs parents ou du titulaire du compte. Les frais seront facturés sur votre compte mobile ou déduits de votre solde. 
-                    <br>
-                    <br>
-                    Fournisseur: LS Solutions, Joan Muyskenweg 38, PO BOX 8545, 1114 AN Amsterdam, Pays-Bas. Pour plus de renseignements, appelez le 0848.123767ou contactez-nous par email support.ch.fr@echovox.com. S'il vous plaît lire attentivement les conditions générales et les <a href="http://gamobila.com/ch/go/fr/quiz.html">Modalités du Concours</a> qui s'appliquent.
+                        <span style="font-weight: bold;">Les frais de participation sont de 30 CHF  par tour!</span>
+                        <br>
+                        Ce quizz commence le 1er avril 2014 00:00 heure et se termine le 31 octobre 2014 23:59 heure.
+                        <br>
+                        <br>
+                        Vous pouvez participer quizz  en soumettant votre numéro de téléphone portable dans le champ prévu sur notre page. Vous recevrez d'abord un message du numéro court 911 à laquelle vous devez répondre par GO pour confirmer votre participation. Les frais de participation sont de 30 CHF (TTC) par tour (+ coût des SMS/données sur votre téléphone)pour les clients Swisscom, Sunrise et Orange. Chaque fois que vous confirmé votre participation à un nouveau tour, vous recevrez un SMS avec un code personnel qui vous donnera au prochain tour de questions auxquelles on doit répondre en ligne dans un laps de temps limité. Vous pouvez participer jusqu'à un maximum de 12 tours (ou jusqu'à ce que vous ayez répondu à toutes les questions dans un tour de qualification correctement).
+                        <br>
+                        <br>
+                        Gamobila n'est pas un service d'abonnement mais un quizz basée sur la connaissance pour lequel vous devez répondre a des questions. Le participant avec le plus grand nombre de bonnes réponses fournies dans un tour sera le gagnant. Dans le cas où, à la fin de la période de quizz plusieurs participants ont généré le même résultat, ceux-ci seront invités à participer par SMS (sans frais supplémentaires) a une finale pour déterminer le vainqueur. Un seul prix sera décerné. Les mineurs ne sont pas autorisés à participer à moins d'avoir l'autorisation de leurs parents ou du titulaire du compte. Les frais seront facturés sur votre compte mobile ou déduits de votre solde. 
+                        <br>
+                        <br>
+                        Fournisseur: LS Solutions, Joan Muyskenweg 38, PO BOX 8545, 1114 AN Amsterdam, Pays-Bas. Pour plus de renseignements, appelez le 0848.123767ou contactez-nous par email support.ch.fr@echovox.com. S'il vous plaît lire attentivement les conditions générales et les <a href="http://gamobila.com/ch/go/fr/quiz.html">Modalités du Concours</a> qui s'appliquent.
                     </p>
                     <br>
                     <div style="text-align: center; margin-bottom: 20px;">    
                         <a href="http://gamobila.com/ch/go/fr/siteterms.html">Conditions générales</a>&nbsp;&nbsp;|&nbsp;&nbsp;
                         <a href="http://gamobila.com/ch/go/fr/privacy.html">Charte de confidentialité</a>&nbsp;&nbsp;|&nbsp;&nbsp;
                         <a href="http://gamobila.com/ch/go/fr/contact.html">Contact</a>
-					</div>
-                <br>
-                <br>
+                    </div>
+                    <br>
+                    <br>
                 </div>
-				<div id="disclaimerGerman" class="disclaimer">
-					<p style="text-align: center;">
+                <div id="disclaimerGerman" class="disclaimer">
+                    <p style="text-align: center;">
                         <span style="font-weight: bold;">Kostet CHF 30,- (TTC) pro Teilnahme!</span>
                         <br>
                         Dieses Quiz beginnt am 1. April 2014 00:00 CET  und endet am 31. Oktober 2014 23:59 CET. <br><br>Sie können am  Quiz teilnehmen indem Sie Ihre Handynummer in dem dafür versehenem Feld auf unserer Website angeben. Sie werden erst eine Nachricht von dem Shortcode 911 erhalten, welche mit dem Kennwort GO von Ihnen bestätigt werden muss. Teilnahmekosten sind CHF 30 (inkl. MwSt.) pro Teilnahme-runde (+ SMS/Datengebühren Deines Handyanbieters) fur Swisscom, Sunrise und Orange Kunden. Jedes Mal, wenn Sie Ihre Teilnahme an einer Runde bestätigen, erhalten Sie von uns eine weitere Nachricht mit einer persönlichen Kennnummer welche Ihnen den Zutritt zu der jeweiliger Fragerunde ermöglicht. Diese Fragen können in einer bestimmten Zeitspanne online beantwortet werden. Sie können zu einem Maximum von 12 mal teilnehmen (oder bis Sie alle Fragen in einer Teilnahme-runde richtig beantwortet haben).
-						<br>
-						<br>
+                        <br>
+                        <br>
 
-						Quiz ist kein Abo Dienst sondern ein Wissensspiel, welches die Beantwortung von Fragen voraussetzt. Der Spieler mit den meisten richtigen Antworten in einer Fragerunde ist der Gewinner. In dem Fall dass am Ende der Quizperiode mehrere Teilnehmer das gleiche Ergebnis erzielt haben, werden diese per SMS zu einer weiteren Fragerunde (ohne zusätzliche Kosten) eingeladen um somit eine Gewinner zu bestimmen. Es wird nur ein Preis vergeben. Minderjährigen ist die Teilnahme an dem Quiz nicht erlaubt, es liegt eine Erlaubnis der Eltern oder Erziehungsberechtigten vor. 
-						<br>
-						<br>
-						Anbieter: LS Solutions, Joan Muyskenweg 38, PO BOX 8545, 1114 AN Amsterdam, Niederlande. Weitere Infos unter 0848.123767 oder E-Mail an support.ch.de@echovox.com. Bitte lesen Sie sorgfältig die Allgemeine Geschäftsbedingungen und Teilnahmebedingungen durch.
+                        Quiz ist kein Abo Dienst sondern ein Wissensspiel, welches die Beantwortung von Fragen voraussetzt. Der Spieler mit den meisten richtigen Antworten in einer Fragerunde ist der Gewinner. In dem Fall dass am Ende der Quizperiode mehrere Teilnehmer das gleiche Ergebnis erzielt haben, werden diese per SMS zu einer weiteren Fragerunde (ohne zusätzliche Kosten) eingeladen um somit eine Gewinner zu bestimmen. Es wird nur ein Preis vergeben. Minderjährigen ist die Teilnahme an dem Quiz nicht erlaubt, es liegt eine Erlaubnis der Eltern oder Erziehungsberechtigten vor. 
+                        <br>
+                        <br>
+                        Anbieter: LS Solutions, Joan Muyskenweg 38, PO BOX 8545, 1114 AN Amsterdam, Niederlande. Weitere Infos unter 0848.123767 oder E-Mail an support.ch.de@echovox.com. Bitte lesen Sie sorgfältig die Allgemeine Geschäftsbedingungen und Teilnahmebedingungen durch.
                     </p>      
                     <br>
                     <div style="text-align: center; margin-bottom: 20px;">  
@@ -313,12 +443,12 @@
             </div>
         </div>
         <script type="text/javascript">
-			var numberOfQuestions = 10;
+            var numberOfQuestions = 10;
             function startQuiz() {
-                
+
                 //var isValid = UNIQUE_PIN_VALID; // bool from  server
                 var isValid = true;
-				//var result = UNIQUE_CORRECT + '/' + UNIQUE_SUMMARY;  // 5/20
+                //var result = UNIQUE_CORRECT + '/' + UNIQUE_SUMMARY;  // 5/20
                 if (isValid) {
                     $("#questForm").show();
                     $("#que1").show();
@@ -326,7 +456,7 @@
                     $("#welcomeMessage").hide();
                 }
                 else {
-                 //   $("#resultNum").html(result);
+                    //   $("#resultNum").html(result);
                     $("#queMessage").show();
                     $(".controls").hide();
                     $("#welcomeMessage").hide();
@@ -334,15 +464,15 @@
             }
 
             $("#shortcodeMsg").hide();
-			
+
             $(".controls").hide();
 
             $(document).ready(function() {
                 langSelector();
                 $("#welcomeMessage").show();
             });
-			
-			$(".disclaimer").hide();
+
+            $(".disclaimer").hide();
         </script>
     </body>
 </html>

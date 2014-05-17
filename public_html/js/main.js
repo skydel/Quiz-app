@@ -23,6 +23,7 @@ function onNext() {
 function onChange() {
     $('#next').removeAttr("disabled");
 }
+/*
 function countResult() {
     var correctAns = 0;
     var answers = ["15", "8", "6", "5", "4", "1", "2", "opt1", "b", "b", "c", "a", "a", "a", "c", "d", "c", "a", "d", "d"];
@@ -36,6 +37,13 @@ function countResult() {
     }
     //alert(correctAns);
     return correctAns;
+}
+*/
+
+var correctAnswers=0;
+function correctAns(){
+    correctAnswers++;
+    $('#next').removeAttr("disabled");
 }
 
 function displayFrench() {
@@ -95,9 +103,9 @@ function playAgain() {
 
 function saveResult() {
 
-    var dynamicData = 'p=' + getURLParameter("p") + '&s=' + numberOfQuestions + '&c=' + countResult();
+    var dynamicData = 'p=' + getURLParameter("p") + '&s=' + numberOfQuestions + '&c=' + correctAnswers; //countResult();
 
-    var score = countResult();
+    var score = correctAnswers; //countResult();
 
     $.ajax({
         dataType: "text",
