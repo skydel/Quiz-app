@@ -1,23 +1,34 @@
 var id = 'que';
-var count = 1;
+//var count = 1;
 var lang;
+
+var randomnumber=Math.floor(Math.random()*26);
+
+count=randomnumber;
+
+var counter = 0;
 
 function getURLParameter(name) {
     return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [, ""])[1].replace(/\+/g, '%20')) || null;
 }
 
 function onNext() {
-
-    if (count >= 1 && count < 20) {
-        previous = '#' + id + count;
-        count = count + 1;
-        select = '#' + id + count;
-        $(select).show();
-        $(previous).hide();
-        $('#next').attr("disabled", true);
+    if (counter<5){
+        if (count >= 1 && count < 30) {
+            previous = '#' + id + count;
+            count = count + 1;
+            select = '#' + id + count;
+            $(select).show();
+            $(previous).hide();
+            $('#next').attr("disabled", true);
+        }
+        else {
+            $('#next').hide();
+        }
+        counter++;
     }
-    else {
-        $('#next').hide();
+    else{
+        saveResult();
     }
 }
 function onChange() {
