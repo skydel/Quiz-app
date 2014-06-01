@@ -3,7 +3,7 @@ var id = 'que';
 var lang;
 var langFlag;
 
-var randomnumber=Math.floor(Math.random()*26);
+var randomnumber=Math.floor(Math.random()*30); // total_question - number_of_question_to_display
 
 count=randomnumber;
 
@@ -15,7 +15,7 @@ function getURLParameter(name) {
 
 function onNext() {
     if ((counter<5&&langFlag===0)||(counter<10&&langFlag===1)){
-        if (count >= 1 && count < 30) {
+        if (count >= 1 && count < 40) {
             previous = '#' + id + count;
             count = count + 1;
             select = '#' + id + count;
