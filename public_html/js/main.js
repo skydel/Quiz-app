@@ -26,6 +26,7 @@ function onNext() {
             $('#next').hide();
         }
         counter++;
+        $('#QueCount').html(counter+1);
     }
     else{
         saveResult();
