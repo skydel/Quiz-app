@@ -36,22 +36,6 @@ function onNext() {
 function onChange() {
     $('#next').removeAttr("disabled");
 }
-/*
-function countResult() {
-    var correctAns = 0;
-    var answers = ["15", "8", "6", "5", "4", "1", "2", "opt1", "b", "b", "c", "a", "a", "a", "c", "d", "c", "a", "d", "d"];
-    for (var i = 0; i < 20; i++) {
-        var i2 = i + 1;
-        var selected = id + i2;
-        var text = $('input[name="' + selected + '"]:checked').val();
-        if (answers[i] === text) {
-            correctAns++;
-        }
-    }
-    //alert(correctAns);
-    return correctAns;
-}
-*/
 
 var correctAnswers=0;
 function correctAns(){
