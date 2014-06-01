@@ -1,6 +1,7 @@
 var id = 'que';
 //var count = 1;
 var lang;
+var langFlag;
 
 var randomnumber=Math.floor(Math.random()*26);
 
@@ -13,7 +14,7 @@ function getURLParameter(name) {
 }
 
 function onNext() {
-    if (counter<5){
+    if ((counter<5&&langFlag===0)||(counter<10&&langFlag===1)){
         if (count >= 1 && count < 30) {
             previous = '#' + id + count;
             count = count + 1;
@@ -73,9 +74,11 @@ function displayGerman() {
 function langSelector() {
     var userLang = navigator.language || navigator.userLanguage;
     if (userLang == 'fr' || userLang == 'fr-BE' || userLang == 'fr-CA' || userLang == 'fr-FR' || userLang == 'fr-LU' || userLang == 'fr-MC' || userLang == 'fr-CH') {
+        langFlag=0;
         displayFrench();
     }
     else {
+        langFlag=1;
         displayGerman();
     }
 }
